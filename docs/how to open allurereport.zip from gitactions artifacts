@@ -1,0 +1,19 @@
+To open the Allure report using that specific URL, you cannot view it directly inside the web browser via the link. GitHub packages artifacts as .zip bundles, which must be downloaded and served locally due to browser security restrictions.
+Here is how you can fetch it and open it from scratch using your terminal or VS Code:
+
+1. Download and Extract the Artifact
+
+1. Click your link to download the file: Download Allure Report Zip (Note: You must be logged into GitHub to download artifacts).
+2. Go to your Downloads folder.
+3. Extract/Unzip the downloaded folder (it will likely be named something like allure-report.zip).
+
+2. Open it via VS Code Terminal
+
+Open your VS Code terminal (Ctrl + \`` or Cmd + ``) and run the following commands based on your computer's Operating System to start a local server:
+
+For Windows (PowerShell)
+
+powershell
+cd ~\Downloads\allure-report
+npx allure open
+Use code with caution.
