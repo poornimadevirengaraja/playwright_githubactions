@@ -2,11 +2,9 @@ name: Playwright Tests with Allure Report
 
 on:
   push:
-    branches:
-      - main                # Triggers when code lands on main (via direct push or PR merge)
+    branches: [ main ]
   pull_request:
-    branches:
-      - main                # Triggers *before* merging, when a PR targets the main branch
+    branches: [ main ]
   workflow_dispatch: # Allows manual triggering from the Actions tab
 
 permissions:
@@ -23,13 +21,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
-        
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
 
       - name: Run Playwright Tests
         run: npx playwright test
