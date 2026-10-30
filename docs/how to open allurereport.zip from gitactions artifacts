@@ -14,11 +14,16 @@ Open your VS Code terminal (Ctrl + \`` or Cmd + ``) and run the following comman
 For Windows (PowerShell)
 
 powershell:
-
+==============
 cd ~\Downloads\allure-report
 npx serve
 install if it ask to do so "press yes"
-
 then Local host : link click to view the results
 
-
+command prompt
+==============
+goto the folder  ~\Downloads\allure-report > cmd
+command line opens with this directory
+npx serve
+install if it ask to do so "press yes"
+then Local host : link click to view the results
