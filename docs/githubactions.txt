@@ -51,11 +51,13 @@ The push trigger fires. GitHub Actions runs the tests on the final combined code
 3. How to deploy this change
 
 Because GitHub Actions looks at the workflow configurations present on the target branch of an event, follow these steps to make sure it triggers smoothly:
-1. Commit the workflow update to your feature branch:bash
+1. Commit the workflow update to your feature branch: poornimatester_branch
+
 git add .github/workflows/playwright.yml
 git commit -m "ci: add main branch triggers"
+git add .
+git commit -m "add playwright tests"
 git push origin poornimatester_branch
-Use code with caution.
 
 2. Open a Pull Request on GitHub from poornimatester_branch into main.
 
