@@ -1,0 +1,41 @@
+############# Trigger pipeline on pull request event. ########################
+
+1. Create a branch from server  demo_pipeline
+2. go to git terminal and pull changes
+    -> git pull
+
+3. switch to new branch
+    -> git checkout demo_pipeline
+
+4. modify some code changes locally in new branch.
+5. push code to branch
+   -> git status
+   -> git add <filename>
+   -> git commit -m "added new code"
+   -> git push
+
+6. go to server and open repository.
+7. click on compare & pull request / contribute -> Pull request
+8. and open pull request
+9. now check playwright.yml pipeline executed once we create a pull request
+10. Once the pipeline is green, merge pull request button is enabled and we can review code
+    merge changes to main.
+
+
+################ types of Trigger in github Actions ####################
+
+1. On pull request
+2. On push operation
+3. On a specific date and time :  0 2 * * MON,THU (At 02:00 AM, only on Monday and Thursday)
+4. Workflow dispatch (it means we can trigger it manually)
+5. On workflow call (means we can call one workflow from another workflow.)
+
+
+HOme work :
+
+Create a file different workflow that from main Workflow
+main workflow 
+           - child workflow file1
+           - child workflow file2
+           - child workflow file3
+           - child workflow file4
