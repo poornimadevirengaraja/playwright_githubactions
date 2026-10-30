@@ -1,0 +1,23 @@
+{
+  "name": "playwright_githubactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poornimadevirengaraja/playwright_githubactions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/poornimadevirengaraja/playwright_githubactions/issues"
+  },
+  "homepage": "https://github.com/poornimadevirengaraja/playwright_githubactions#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  }
+}
